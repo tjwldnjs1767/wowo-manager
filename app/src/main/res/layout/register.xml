@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Push.PushActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffc42c"
+        android:minHeight="?attr/actionBarSize">
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원가입"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="440px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_weight="0.13"
+        android:backgroundTint="#888888"
+        android:gravity="center"
+        android:hint="아이디"
+        android:inputType="textNoSuggestions"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="440px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.13"
+        android:backgroundTint="#888888"
+        android:gravity="center"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/workPlaceName"
+        android:layout_width="440px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.13"
+        android:backgroundTint="#888888"
+        android:gravity="center"
+        android:hint="사업장 이름"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/phoneNum"
+        android:layout_width="440px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.13"
+        android:backgroundTint="#888888"
+        android:gravity="center"
+        android:hint="핸드폰 번호"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/signUpbtn"
+        android:layout_width="301dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/registerbtn"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:onClick="clickSignUpBtn"
+        android:text="회원가입"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+</LinearLayout>

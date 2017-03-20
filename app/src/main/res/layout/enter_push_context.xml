@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#fafafa">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffc42c"
+        android:minHeight="?attr/actionBarSize">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="푸시 내용 설정"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="301dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/inputPushBody"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button"
+        android:onClick="clickSaveBtn"
+        android:text="저장"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/inputBssid"
+        android:layout_width="440px"
+        android:layout_height="100px"
+        android:layout_marginTop="115dp"
+        android:text="BSSID"
+        android:background="#fafafa"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/toolBar"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickBssidBtn"
+        android:textColor="#777777"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/inputPushTitle"
+        android:layout_width="440px"
+        android:layout_height="100px"
+        android:layout_marginTop="15dp"
+        android:ems="4"
+        android:inputType="textShortMessage"
+        android:hint="푸시 제목"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/inputBssid"
+        android:layout_alignLeft="@+id/inputBssid"
+        android:layout_alignStart="@+id/inputBssid" />
+
+    <EditText
+        android:id="@+id/inputPushBody"
+        android:layout_width="440px"
+        android:layout_height="100px"
+        android:layout_marginTop="11dp"
+        android:ems="4"
+        android:inputType="text|textImeMultiLine"
+        android:hint="푸시 내용"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/inputPushTitle"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
